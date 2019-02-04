@@ -1,5 +1,6 @@
-#gamewindow{
-  height: 1024;
-  width: 1536;
-  color: : lightgrey;
+.center-block{
+  /* border-top: 200px; */
+  height: 700px;
+  width: 1000px;
+  background-color: darkgrey;
   }
