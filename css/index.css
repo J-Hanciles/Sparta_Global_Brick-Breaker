@@ -1,6 +1,12 @@
-.center-block{
+.playscreen{
   /* border-top: 200px; */
+  position: relative;
   height: 700px;
   width: 1000px;
   background-color: darkgrey;
   }
+
+#score {
+  text-align: center;
+  color: white;
+}
