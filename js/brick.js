@@ -1,13 +1,11 @@
 document.addEventListener("DOMContentLoaded", function(){
 // $(document).ready(function() {
 console.log("Hello");
-function theMidBrick(){
-
-
   var brick = ["midblock1", "midblock2", "midblock3", "midblock4", "midblock5", "midblock6", "midblock7", "midblock8", "midblock9", "midblock10", "midblock11", "midblock12"];
+
+function theMidBrick(){
   var i = 0;
   var brickmove = 0;
-  var bricktrail = 0;
   var j = 0;
 
   brickmove = setInterval(function meh(){
@@ -19,10 +17,21 @@ function theMidBrick(){
     i=i+1;
     j=i-1;
     if(i==10) {
+        console.log("Game Over");
       i=0
     }
-  }, 500);
+  }, 250);
+
+  // if (theMidBrick(brick[i==9]){
+  //   console.log("Game Over!");
+  // }
+
 }
 
 theMidBrick()
+
+  // console.log(brick[9]);
+
+
+
 });
