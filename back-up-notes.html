@@ -13,7 +13,7 @@
 
 //Make a function for the brick to actually move
 
-//attempt1? - I don't what is the correct way to create this function to have the "object moving - as I have yet to assign the png image to the object, which I think is what I'm meant to do first"
+                                                  //attempt1? - I don't what is the correct way to create this function to have the "object moving - as I have yet to assign the png image to the object, which I think is what I'm meant to do first"
 
 // [null, null, null, null, null, null, null, null, null, null, null, "midblockmoving"]
 // [null, null, null, null, null, null, null, null, null, null, "midblockmoving", null]
@@ -33,3 +33,70 @@
 // var midblockmove = (myFunction);
 
 //Obstacle for brick to stop on, triggering Game over
+
+
+
+                                          //attempt3
+// bricktrail = setInterval(function delay(){
+//   document.getElementById(brick[i]).style.backgroundColor = null;
+//   i=i+1;
+//   if(i==12) {
+//     clearInterval(bricktrail);
+//   }
+// }, 1000);
+
+// brickmove = setInterval(function meh(){
+//   document.getElementById(brick[i]).style.backgroundColor = "darkgrey";
+//   i=i+1;
+//   if(i===12) {
+//     clearInterval(i);
+//   }
+// }, 1000);
+
+// for (var i = 12; i >= 0; i--) {
+// var id = "midblock" + i;
+// console.log(document.getElementById(id));
+// }
+
+// document.getElementById(meh()).style.backgroundColor = "firebrick";
+
+//
+// for(var i = 12; i >= 1; i-- ){
+//   (function(i) {
+//     setInterval(function(){
+//       var id = i;
+//       console.log(id)
+//     }, 5000)
+//   })(i);
+//   }
+  // var id = "midblock" + i;
+  // console.log(id);
+  // document.getElementById(id).style.backgroundColor = "firebrick";
+  // document.getElementById(id+1).style.backgroundColor = "white";
+
+}
+
+//   var list = [1, 2, 3, 4, 5];
+//
+//   for (var i = 0, len = list.length; i < len; i += 1) {
+//       (function(i) {
+//           setInterval(function() {
+//               list[i] += 10;
+//               console.log(i + "=>" + list[i] + "\n");
+//           }, 5000)
+//       })(i);
+//   }
+//
+//   var setInterval(function {
+//
+//     var setTimeout(function () {
+//       for(var i = 12; i >= 1; i-- ){
+//         var id = "midblock" + i;
+//         console.log(id);
+//         document.getElementById(id).style.backgroundColor = "firebrick";
+//
+//       }
+//     }, 1000);
+//
+//   }, 1000);
+  // }
