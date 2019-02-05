@@ -1,17 +1,25 @@
 document.addEventListener("DOMContentLoaded", function(){
 // $(document).ready(function() {
   function theBrick(){
-    document.getElementById("midblock12").style.backgroundColor = "firebrick"
 
-    var brick = [midblock1, midblock2, midblock3, midblock4, midblock5, midblock6, midblock7, midblock8, midblock9, midblock10, midblock11, midblock12];
-    var i = 12;
-    setInterval( function meh(){
-      console.log(brick[i-- % brick.length]);
 
+    var brick = ["midblock1", "midblock2", "midblock3", "midblock4", "midblock5", "midblock6", "midblock7", "midblock8", "midblock9", "midblock10", "midblock11", "midblock12"];
+    var i = 0;
+    setInterval(function meh(){
+      document.getElementById(brick[i]).style.backgroundColor = "firebrick";
+      i=i+1;
+      if(i===12) {
+        clearInterval(i);
+      }
     }, 1000);
 
+    // for (var i = 12; i >= 0; i--) {
+    // var id = "midblock" + i;
+    // console.log(document.getElementById(id));
+    // }
 
-      document.getElementById(meh()).style.backgroundColor = "firebrick";
+    // document.getElementById(meh()).style.backgroundColor = "firebrick";
+
     //
     // for(var i = 12; i >= 1; i-- ){
     //   (function(i) {
