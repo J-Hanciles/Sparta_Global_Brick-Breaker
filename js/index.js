@@ -5,13 +5,39 @@ document.addEventListener("DOMContentLoaded", function(){
 
     var brick = ["midblock1", "midblock2", "midblock3", "midblock4", "midblock5", "midblock6", "midblock7", "midblock8", "midblock9", "midblock10", "midblock11", "midblock12"];
     var i = 0;
-    setInterval(function meh(){
+    var brickmove = 0;
+    var bricktrail = 0;
+    var j = 0;
+
+    brickmove = setInterval(function meh(){
       document.getElementById(brick[i]).style.backgroundColor = "firebrick";
+      document.getElementById(brick[j]).style.backgroundColor = "darkgrey";
+
+      console.log(brick[i]);
+      console.log(brick[j]);
       i=i+1;
-      if(i===12) {
-        clearInterval(i);
+      j=i-1;
+      if(i==12) {
+        i=0
       }
-    }, 1000);
+
+    }, 500);
+
+    // bricktrail = setInterval(function delay(){
+    //   document.getElementById(brick[i]).style.backgroundColor = null;
+    //   i=i+1;
+    //   if(i==12) {
+    //     clearInterval(bricktrail);
+    //   }
+    // }, 1000);
+
+    // brickmove = setInterval(function meh(){
+    //   document.getElementById(brick[i]).style.backgroundColor = "darkgrey";
+    //   i=i+1;
+    //   if(i===12) {
+    //     clearInterval(i);
+    //   }
+    // }, 1000);
 
     // for (var i = 12; i >= 0; i--) {
     // var id = "midblock" + i;
