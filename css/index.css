@@ -3,7 +3,7 @@
   position: absolute;
   height: 700px;
   width: 1000px;
-  background-color: darkgrey;
+background-color: darkgrey;
   }
 
 #score {
@@ -14,7 +14,7 @@
 #playerbase{
   height: 200px;
   width: 50px;
-  background-color: royalblue
+  background-color: royalblue;
 }
 
 /* #midblock {
