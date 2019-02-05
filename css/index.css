@@ -11,6 +11,12 @@
   color: white;
 }
 
+#playerbase{
+  height: 200px;
+  width: 50px;
+  background-color: royalblue
+}
+
 /* #midblock {
   background-color:firebrick;
 } */
