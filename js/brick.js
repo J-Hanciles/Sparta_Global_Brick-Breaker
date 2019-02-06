@@ -36,9 +36,22 @@ theMidBrick()
   // document.getElementById('midblock10').addEventListener("leftarrow");
   // document.getElementById('midblock10').style.backgroundColor = "royalblue";
 
-function highpunch(event){
-  var hpunch = event.keyDown;
+// function highpunch(event){
+//   var hpunch = event.keyDown;
+//
+// }
 
+// document.onkeydown = function (event) {
+//   if (event) {
+//
+//   }
+// }
+function checkKey(e) {
+    e = e || window.event;
+    console.log(e.keyCode);
 }
+
+document.onkeydown = checkKey;
+
 
 });
