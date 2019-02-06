@@ -21,9 +21,20 @@ function theMidBrick(){
       i=0
     }
   }, 250);
+
+
+
 }
 
 theMidBrick()
+
+function checkKey(e) {
+    e = e || window.event;
+    document.getElementById("midblock10").style.backgroundColor = "royalblue";
+    console.log(e.keyCode);
+}
+
+document.onkeydown = checkKey;
 
 // var playermidpunch;
 
@@ -46,12 +57,7 @@ theMidBrick()
 //
 //   }
 // }
-function checkKey(e) {
-    e = e || window.event;
-    console.log(e.keyCode);
-}
 
-document.onkeydown = checkKey;
 
 
 });
