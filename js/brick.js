@@ -21,17 +21,24 @@ function theMidBrick(){
       i=0
     }
   }, 250);
-
-  // if (theMidBrick(brick[i==9]){
-  //   console.log("Game Over!");
-  // }
-
 }
 
 theMidBrick()
 
-  // console.log(brick[9]);
+// var playermidpunch;
 
+// document.getElementById('highbtn').addEventListener('click', highPunch);
+//
+// function highPunch(){
+//   console.log("Punch");
+// }
 
+  // document.getElementById('midblock10').addEventListener("leftarrow");
+  // document.getElementById('midblock10').style.backgroundColor = "royalblue";
+
+function highpunch(event){
+  var hpunch = event.keyDown;
+
+}
 
 });
