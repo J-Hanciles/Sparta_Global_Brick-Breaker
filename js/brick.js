@@ -17,11 +17,12 @@ function theMidBrick(){
     i=i+1;
     j=i-1;
 
-// if ("midblock10".style.backgroundColor = "royalblue"){
-//   i=0
-// } else {
-//   console.log("Game Over");
-// }
+  // if (document.getElementById("midblock10").style.backgroundColor = "royalblue" && i==9){
+  //   i=0
+  //   console.log("break");
+  // } else if(i>10){
+  //   console.log("Game Over");
+  // }
 
 
     if(i==10) {
@@ -36,17 +37,6 @@ function theMidBrick(){
 
 theMidBrick()
 
-// function checkKey(e) {
-//
-//
-//     e = e || window.event;
-//     document.getElementById("midblock10").style.backgroundColor = "royalblue";
-//     console.log(e.keyCode==37);
-// }
-//
-// document.onkeydown = checkKey;
-//
-//
 
 document.onkeydown = function playermidpunch(event){
   if (event.keyCode == 37) {
@@ -56,27 +46,6 @@ document.onkeydown = function playermidpunch(event){
 
 }
 
-// var playermidpunch;
-
-// document.getElementById('highbtn').addEventListener('click', highPunch);
-//
-// function highPunch(){
-//   console.log("Punch");
-// }
-
-  // document.getElementById('midblock10').addEventListener("leftarrow");
-  // document.getElementById('midblock10').style.backgroundColor = "royalblue";
-
-// function highpunch(event){
-//   var hpunch = event.keyDown;
-//
-// }
-
-// document.onkeydown = function (event) {
-//   if (event) {
-//
-//   }
-// }
 
 
 

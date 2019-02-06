@@ -4,9 +4,9 @@ The JavaScript Game project I came up with was quite the "spur of the moment" id
 A simple game, break the bricks before they break you.
 Instructions - Full
 Press "Up arrow" for High Punch
-Press "Right arrow" for Mid Punch
-Press "Down arrow" for Low Kick
+Press "Left arrow" for Mid Punch
+Press "Down arrow" for Low Kick 
 Try to last as long as you can, the bricks are not your friends.
 
 Instructions - Sprint 1
-Press "Right arrow" for Mid Punch
+Press "Left arrow" for Mid Punch
