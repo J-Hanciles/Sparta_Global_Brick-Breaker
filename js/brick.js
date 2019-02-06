@@ -13,8 +13,6 @@ function theMidBrick(){
     document.getElementById(brick[i]).style.backgroundColor = "firebrick";
     document.getElementById(brick[j]).style.backgroundColor = "darkgrey";
 
-    // console.log(brick[i]);
-    // console.log(brick[j]);
     i=i+1;
     j=i-1;
 
@@ -23,18 +21,15 @@ function theMidBrick(){
       i=0
     }
   }, 250);
-}
 
-theMidBrick()
-
-document.onkeydown = function playermidpunch(event){
-  if (event.keyCode == 37) {
-    document.getElementById("midblock10").style.backgroundColor = "royalblue";
+  document.onkeydown = function playermidpunch(event){
+    if (event.keyCode == 37) {
+      document.getElementById("midblock10").style.backgroundColor = "royalblue";
+    }
   }
 }
 
-
-
+theMidBrick()
 
 });
 
