@@ -36,13 +36,25 @@ function theMidBrick(){
 
 theMidBrick()
 
-function checkKey(e) {
-    e = e || window.event;
-    document.getElementById("midblock10").style.backgroundColor = "royalblue";
-    console.log(e.keyCode);
-}
+// function checkKey(e) {
+//
+//
+//     e = e || window.event;
+//     document.getElementById("midblock10").style.backgroundColor = "royalblue";
+//     console.log(e.keyCode==37);
+// }
+//
+// document.onkeydown = checkKey;
+//
+//
 
-document.onkeydown = checkKey;
+document.onkeydown = function playermidpunch(event){
+  if (event.keyCode == 37) {
+    document.getElementById("midblock10").style.backgroundColor = "royalblue";
+  }
+
+
+}
 
 // var playermidpunch;
 
