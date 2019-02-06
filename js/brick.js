@@ -7,6 +7,7 @@ function theMidBrick(){
   var i = 0;
   var brickmove = 0;
   var j = 0;
+  var brickblock = 0;
 
   brickmove = setInterval(function meh(){
     document.getElementById(brick[i]).style.backgroundColor = "firebrick";
@@ -24,12 +25,23 @@ function theMidBrick(){
   //   console.log("Game Over");
   // }
 
+switch (brickblock) {
+  case (document.getElementById("midblock10").style.backgroundColor = "royalblue" && i==9):
+    i=0;
+    break;
+  case i=10:
+        alert("Game Over");
+    break;
+  default:
 
 
-    if(i==10) {
-        console.log("Game Over");
-      i=0
-    }
+}
+
+
+    // if(i==10) {
+    //     console.log("Game Over");
+    //   i=0
+    // }
   }, 250);
 
 
