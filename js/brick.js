@@ -20,9 +20,10 @@ function theMidBrick(){
   // if (document.getElementById("midblock10").style.backgroundColor = "royalblue" && i==9){
   //   i=0
   //   console.log("break");
-  // } else if(i>10){
+  // } else(i>11){
   //   console.log("Game Over");
   // }
+
 
 
     if(i==10) {
