@@ -16,6 +16,14 @@ function theMidBrick(){
     // console.log(brick[j]);
     i=i+1;
     j=i-1;
+
+// if ("midblock10".style.backgroundColor = "royalblue"){
+//   i=0
+// } else {
+//   console.log("Game Over");
+// }
+
+
     if(i==10) {
         console.log("Game Over");
       i=0
