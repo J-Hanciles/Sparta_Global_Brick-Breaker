@@ -18,6 +18,10 @@ body{
   margin: 2px;
 }
 
+.col.empty {
+  cursor: pointer;
+}
+
 .next-red {
   background-color: rgba(255, 0, 0, 0.2);
 }
