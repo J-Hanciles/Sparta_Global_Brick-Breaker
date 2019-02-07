@@ -1,7 +1,8 @@
 class Connect4 {
   constructor(selector) {
     this.ROWS = 6;
-    this.COLS = 8;
+    this.COLS = 7;
+    this.player = 'red';
     this.selector = selector;
     this.createGrid();
     this.setupEventListeners();
@@ -25,6 +26,7 @@ class Connect4 {
 
   setupEventListeners(){
     const $board = $(this.selector);
+    
 
     function findLastEmptyCell(col) {
       const cells = $(`.col[data-col='${col}']`);
@@ -47,9 +49,8 @@ class Connect4 {
       $('.col').removeClass(`next-red`);
     })
 
-    $board.on('click', '.col-empty', function(){
+    $board.on('click', '.col.empty', function(){
       const col = $(this).data('col');
-      // const row = $(this).data('row');
       const $lastEmptyCell = findLastEmptyCell(col);
       $lastEmptyCell.removeClass('empty');
       $lastEmptyCell.addClass('red');
