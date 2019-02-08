@@ -19,7 +19,17 @@ removed my need to utilise arrays for each piece placement (especially after my 
 
 -Using jQuery as much as I did was certainly a challenge, but it was welcomed just due to how much I was able to gradually understand, there is still a learning curve for me to fully grasp the rules and functionality.
 
--- Function
+-- FUNCTION
 Connect four of your pieces in a row while preventing your opponent from doing the same. Press "Restart" button to empty the board.
 
 -- Issues
+
+Game-1 "Brick-Breaker"
+- Learning to properly scale ideas to what is feasible.
+- Making sure to understand which tools would best suit a game-build.
+- Transparency.
+
+Game-2 "Connect 4"
+- Furthering knowledge in jQuery particularly with statements regarding data not in an array.
+- Including sounds and possible animations.
+- Main menu screen and game over screen.
