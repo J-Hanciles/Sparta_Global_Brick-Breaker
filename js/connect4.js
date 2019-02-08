@@ -10,6 +10,7 @@ class Connect4 {
 
   createGrid() {
     const $board = $(this.selector);
+    $board.empty();
     for (let row = 0; row < this.ROWS; row++) {
       const $row = $('<div>')
         .addClass('row');
@@ -56,6 +57,10 @@ class Connect4 {
       $lastEmptyCell.addClass(that.player);
       that.player = (that.player == 'red') ? 'black' : 'red';
       $(this).trigger('mouseenter');
-    })
+    });
   }
+      restart() {
+     this.createGrid();
+     this.onPlayerMove();
+    }
 }
